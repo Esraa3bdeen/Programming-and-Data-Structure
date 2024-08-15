@@ -1,0 +1,17 @@
+def sum_args(*args):
+    # If no arguments are passed, return 0
+    if not args:
+        return 0
+    
+    # Calculate the sum of all passed arguments
+    total_sum = sum(args)
+    
+    # If the sum is zero, return 0
+    if total_sum == 0:
+        return 0
+    
+    return total_sum
+print(sum_args(1, 2, 3))         
+print(sum_args(10, 20, 30, 40))  
+print(sum_args())                
+print(sum_args(5.5, 4.5, -10))
